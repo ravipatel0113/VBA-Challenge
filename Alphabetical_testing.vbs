@@ -38,7 +38,7 @@ Sub test_macro()
     For i = 2 To WS_Count
         ' Check if we are still within the same ticker, if it is not...
         If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
-            Yearly_change = Cells(i, 6).Value - Cells(i + j, 3).Value
+            Yearly_change = Cells(i, 6).Value - Cells(i - j, 3).Value
             
             If (Yearly_change = 0) Or (Cells(i - j, 3) = 0) Then
                 Percentage_change = 0
