@@ -24,6 +24,14 @@ Sub main() 'Main part of the macro script
     j = 0  ' to get it back to the top
     Dim Volume As Double
     Volume = 0
+    ' Table header format
+    Range("J1").Value = "Ticker_Symbol"
+    Range("K1").Value = "Yearly_Change"
+    Range("L1").Value = "Percentage_Change"
+    Range("M1").Value = "Total_Stock_Volume"
+    Dim Yearly_change, Percentage_change As Double
+    Yearly_change = 0
+    Percentage_change = 0
                                  
     ' Keep track of the location for each ticker in the summary table
     Dim ST As Double 'Summary Table
